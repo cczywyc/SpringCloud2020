@@ -12,6 +12,11 @@
     <artifactId>cloud-provider-payment8001</artifactId>
 
     <dependencies>
+        <dependency><!-- 引入自己定义的api通用包，可以使用Payment支付Entity -->
+            <groupId>com.shterm.springcloud</groupId>
+            <artifactId>cloud-api-commons</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -48,7 +53,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.16.18</version>
+            <version>1.18.4</version>
             <optional>true</optional>
         </dependency>
         <dependency>
