@@ -22,7 +22,9 @@ public class OrderController {
     /** RestTemplate */
     @Resource
     private RestTemplate restTemplate;
-    private static final String PAYMENT_URL = "http://localhost:8001";
+    /** 服务提供者url */
+    //private static final String PAYMENT_URL = "http://localhost:8001";
+    private static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 
     /**
      * 新增
