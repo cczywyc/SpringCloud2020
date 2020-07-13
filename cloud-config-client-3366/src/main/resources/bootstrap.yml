@@ -1,5 +1,5 @@
 server:
-  port: 3355
+  port: 3366
 
 spring:
   application:
@@ -9,7 +9,7 @@ spring:
       label: master
       name: config
       profile: dev
-      uri: http://localhost:3344 #配置中心地址
+      uri: http://localhost:3344
   rabbitmq:
     host: 47.114.45.155
     port: 5672
@@ -21,7 +21,6 @@ eureka:
     service-url:
       defaultZone: http://localhost:7001/eureka
 
-#暴露监控端点
 management:
   endpoints:
     web:
